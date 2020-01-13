@@ -4,7 +4,7 @@ import PostList from './PostList'
 export default function PagePosts() {
     return (
         <div>
-            <h3 className="mb-4">Posts</h3>
+            <h2 className="mb-4 display-4">Posts</h2>
             <PostList/>
         </div>
     )

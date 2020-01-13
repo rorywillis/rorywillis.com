@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import ReactMarkdown from 'react-markdown';
-import postData from "../posts/posts.json";
+import postData from "../config/posts.json";
 
 export default function PagePost() {
 
@@ -25,8 +25,14 @@ export default function PagePost() {
         <div>
             {post && (
                 <>
-                    <h2 className="mb-4">{meta.title}</h2> 
-                    <ReactMarkdown source={post} />
+                <div className="mb-4 mt-4">
+                    <h2 className="display-4 mb-0">
+                        {meta.title}
+                    </h2> 
+                    {meta.date && (<small className="text-muted font-weight-light">{meta.date}</small>)}
+                </div>
+
+                    <ReactMarkdown source={post} escapeHtml={false} />
                 </>
             )}
         </div>

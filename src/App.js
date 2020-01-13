@@ -1,12 +1,13 @@
 import React from 'react';
 import Header from "./components/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const PageHome = React.lazy(() => import('./components/PageHome'));
 const PagePost = React.lazy(() => import('./components/PagePost'));
 const PagePosts = React.lazy(() => import('./components/PagePosts'));
-const PageAboutMe = React.lazy(() => import('./components/PageAboutMe'));
+const PageGeneric = React.lazy(() => import('./components/PageGeneric'));
 
 function App() {
 	return (
@@ -19,14 +20,17 @@ function App() {
 							<Route path="/" exact>
 								<PageHome />
 							</Route>
-							<Route path="/about">
+							{/* <Route path="/about">
 								<PageAboutMe />
-							</Route>
+							</Route> */}
 							<Route path="/post/:slug">
 								<PagePost />
 							</Route>
 							<Route path="/posts">
 								<PagePosts />
+							</Route>
+							<Route path="/:slug">
+								<PageGeneric />
 							</Route>
 						</Switch>
 					</div>
