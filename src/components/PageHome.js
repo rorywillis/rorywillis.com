@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import postData from "../posts/posts.json";
-import test from "../posts/first-post.md";
 import ReactMarkdown from "react-markdown";
 import PostList from './PostList.js';
 
