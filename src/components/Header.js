@@ -1,0 +1,42 @@
+import React from 'react'
+import rory from "../images/rory.jpg";
+import { NavLink, useLocation } from "react-router-dom";
+import cc from "classcat";
+
+export default function Header(props) {
+
+    const { pathname } = useLocation();
+
+    const links = [
+        {
+            url: "/",
+            title: "Home"
+        },
+        {
+            url: "/about",
+            title: "About"
+        }
+    ]
+
+    return (
+        <div className="d-flex justify-content-start align-items-center mt-3">
+            <img src={rory} className="img img-fluid rounded-circle mr-4" style={{maxWidth: 100}} />
+            <nav class="nav">
+                {links.map(link => (
+                    <NavLink 
+                        to={link.url} 
+                        activeClassName="" 
+                        className={cc([{
+                            "nav-link": true,
+                            "text-muted": pathname === link.url ? false : true,
+                            "text-primary": pathname === link.url ? true : false
+                        }])}
+                        exact={true}
+                    >
+                        {link.title}
+                    </NavLink>
+                ))}
+            </nav>
+        </div>
+    )
+}
