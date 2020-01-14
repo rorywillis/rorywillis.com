@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import ReactMarkdown from 'react-markdown';
 import postData from "../config/posts.json";
+import Disqus from 'disqus-react';
 
 export default function PagePost() {
 
     const [post, setPost] = useState();
     const [meta, setMeta] = useState();
+    const [disqus, disqusConfig] = useState();
     const { slug } = useParams();
+    const { url } = useLocation();
 
     useEffect(() => {
         const md = require(`../posts/${slug}.md`)
@@ -33,6 +36,15 @@ export default function PagePost() {
                 </div>
 
                     <ReactMarkdown source={post} escapeHtml={false} />
+
+                    <div className="mt-4">
+                        test
+                        <Disqus.DiscussionEmbed shortname={"rorywillis.com"} config={{
+                            url: url,
+                            identifier: slug,
+                            title: meta.title,
+                        }} />
+                    </div>
                 </>
             )}
         </div>

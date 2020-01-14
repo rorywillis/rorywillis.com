@@ -1,8 +1,14 @@
 [
     {
+        "slug": "dynamically-render-markdown-from-a-react-component",
+        "title": "Dynamically Render Markdown from a React Component",
+        "description": "I demonstrate how to render markdown files dynamically based on the url",
+        "date": "01/01/20"
+    },
+    {
         "slug": "what-i-use",
         "title": "What I Use",
         "description": "A list of hardware & software that I use on a daily basis. Heavily inspired by Adam Wathan's site.",
-        "date": "01/01/20"
+        "date": "12/15/20"
     }
-]
+] 
