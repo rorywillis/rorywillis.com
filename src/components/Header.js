@@ -24,7 +24,7 @@ export default function Header(props) {
     return (
         <div className="d-flex justify-content-start align-items-center mt-3">
             <Link to="/">
-                <img src={"/images/rory.jpg"} className="img img-fluid rounded-circle mr-4" style={{maxWidth: 100}} />
+                <img src={"/images/rory.jpg"} className="img img-fluid rounded-circle mr-4" alt="Rory Willis" style={{maxWidth: 100}} />
             </Link>
             <nav class="nav">
                 {links.map(link => (
