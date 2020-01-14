@@ -1,5 +1,11 @@
 [
     {
+        "slug": "laravel-service-pattern",
+        "title": "Laravel: Using the Service Pattern",
+        "description": "Services can be used to abstract reusable logic away from controllers as your app scales",
+        "date": "01/14/20"
+    },
+    {
         "slug": "dynamically-render-markdown-from-a-react-component",
         "title": "Dynamically Render Markdown from a React Component",
         "description": "I demonstrate how to render markdown files dynamically based on the url",
