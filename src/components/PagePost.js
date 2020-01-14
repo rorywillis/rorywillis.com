@@ -3,6 +3,8 @@ import { useParams, useLocation } from "react-router-dom";
 import ReactMarkdown from 'react-markdown';
 import postData from "../config/posts.json";
 import Disqus from 'disqus-react';
+import Helmet from 'react-helmet';
+import site from "../config/site.json";
 
 export default function PagePost() {
 
@@ -28,6 +30,10 @@ export default function PagePost() {
         <div>
             {post && (
                 <>
+                <Helmet>
+                    <title>{site.title} | {meta.title}</title>
+                    <meta name="Description" content={meta.description}/>
+                </Helmet>
                 <div className="mb-4 mt-4">
                     <h2 className="display-4 mb-0">
                         {meta.title}

@@ -1,6 +1,7 @@
 [
     {
         "slug": "about",
-        "title": "About Me"
+        "title": "About Me",
+        "description": "I work as a full-stack developer for Gray Television, a leading media company. I'm interested in many languages, but my current jam is React, Node, and PHP."
     }
 ]

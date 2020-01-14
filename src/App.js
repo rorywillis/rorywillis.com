@@ -2,8 +2,8 @@ import React from 'react';
 import Header from "./components/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
+import site from "./config/site.json";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Disqus from 'disqus-react';
 
 const PageHome = React.lazy(() => import('./components/PageHome'));
 const PagePost = React.lazy(() => import('./components/PagePost'));

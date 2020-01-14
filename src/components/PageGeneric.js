@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import ReactMarkdown from 'react-markdown';
 import pageData from "../config/pages.json";
+import { Helmet } from "react-helmet";
+import site from "../config/site.json";
 
 export default function PageGeneric() {
 
@@ -25,6 +27,10 @@ export default function PageGeneric() {
         <div>
             {page && (
                 <>
+                    <Helmet>
+                        <title>{site.title} | {meta.title}</title>
+                        <meta name="Description" content={meta.description}/>
+                    </Helmet>
                     <div className="mb-4 mt-4">
                         <h2 className="display-4 mb-0">
                             {meta.title}
