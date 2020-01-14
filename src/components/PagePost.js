@@ -38,7 +38,7 @@ export default function PagePost() {
                     <ReactMarkdown source={post} escapeHtml={false} />
 
                     <div className="mt-4">
-                        <Disqus.DiscussionEmbed shortname={"rorywillis.com"} config={{
+                        <Disqus.DiscussionEmbed shortname={"rorywillis-com"} config={{
                             url: url,
                             identifier: slug,
                             title: meta.title,
