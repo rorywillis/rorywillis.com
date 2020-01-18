@@ -10,7 +10,7 @@ export default function PagePosts() {
                 <title>{site.title} | Posts</title>
                 <meta name="Description" content="My Posts"/>
             </Helmet>
-            <h2 className="mb-4 display-4">Posts</h2>
+            <h1 className="mb-4">Posts</h1>
             <PostList/>
         </div>
     )

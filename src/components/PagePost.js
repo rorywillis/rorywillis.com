@@ -33,7 +33,7 @@ export default function PagePost() {
                     <title>{site.title} | {meta.title}</title>
                     <meta name="Description" content={meta.description}/>
                 </Helmet>
-                <div className="mb-4 mt-5">
+                <div className="mb-4">
                     <h1 className="mb-0">
                         {meta.title}
                     </h1> 

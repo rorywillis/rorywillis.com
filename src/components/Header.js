@@ -22,7 +22,7 @@ export default function Header(props) {
     ]
 
     return (
-        <div className="d-flex justify-content-between align-items-center mt-4">
+        <div className="d-flex justify-content-between align-items-center mt-4 mb-5">
             <Link to="/" className="d-flex justify-content-start align-items-center" style={{textDecoration: "none"}}>
                 <img src={"/images/rory.jpg"} className="img img-fluid rounded-circle mr-2" alt="Rory Willis" style={{ maxWidth: 100 }} />
                 <h3 className="m-0 ml-3 text-dark" style={{fontFamily: "Reey"}}>Rory Willis</h3> 

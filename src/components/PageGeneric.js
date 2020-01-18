@@ -31,10 +31,10 @@ export default function PageGeneric() {
                         <title>{site.title} | {meta.title}</title>
                         <meta name="Description" content={meta.description}/>
                     </Helmet>
-                    <div className="mb-4 mt-4">
-                        <h2 className="display-4 mb-0">
+                    <div className="mb-4">
+                        <h1 className="mb-4">
                             {meta.title}
-                        </h2> 
+                        </h1> 
                         {meta.date && (<small className="text-muted font-weight-light">{meta.date}</small>)}
                     </div>
                     <ReactMarkdown source={page} escapeHtml={false} />
