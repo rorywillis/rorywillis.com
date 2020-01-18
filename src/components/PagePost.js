@@ -10,7 +10,6 @@ export default function PagePost() {
 
     const [post, setPost] = useState();
     const [meta, setMeta] = useState();
-    const [disqus, disqusConfig] = useState();
     const { slug } = useParams();
     const { url } = useLocation();
 
@@ -34,16 +33,16 @@ export default function PagePost() {
                     <title>{site.title} | {meta.title}</title>
                     <meta name="Description" content={meta.description}/>
                 </Helmet>
-                <div className="mb-4 mt-4">
-                    <h2 className="display-4 mb-0">
+                <div className="mb-4 mt-5">
+                    <h1 className="mb-0">
                         {meta.title}
-                    </h2> 
+                    </h1> 
                     {meta.date && (<small className="text-muted font-weight-light">{meta.date}</small>)}
                 </div>
 
                     <ReactMarkdown source={post} escapeHtml={false} />
 
-                    <div className="mt-4">
+                    <div className="mt-5">
                         <Disqus.DiscussionEmbed shortname={"rorywillis-com"} config={{
                             url: url,
                             identifier: slug,

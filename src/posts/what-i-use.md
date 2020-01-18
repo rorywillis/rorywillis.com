@@ -2,9 +2,9 @@ After seeing several others make a "uses" page, I wanted to create my own. This 
 
 ### Hardware
 
-**Macbook Pro Early 2015**
+**Macbook Pro 15 inch 2019**
 
-My MBP has been humming along nicely and I feel it's one of the best purchases of my life. I think I'll shed a little tear whenever I have to upgrade, but hopefully that doesn't happen anytime soon.
+I recently upgraded to the 15 inch MBP after using a 13 inch for a long time. I wasn't sure it would be portable enough, but it's not really a huge a difference and the extra power has been nice.
 
 **Ipad Air 2019**
 

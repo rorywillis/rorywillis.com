@@ -1,4 +1,4 @@
-The service pattern is a great way to abstract *certain* logic into a highly reusable class. Let's go over a scenario to help us understand when to use it.
+The service pattern is a great way to abstract *certain* logic into a highly reusable class.
 
 #### A scenario *without* using the service pattern
 

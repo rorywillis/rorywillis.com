@@ -5,6 +5,7 @@ import "./App.scss";
 import site from "./config/site.json";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+
 const PageHome = React.lazy(() => import('./components/PageHome'));
 const PagePost = React.lazy(() => import('./components/PagePost'));
 const PagePosts = React.lazy(() => import('./components/PagePosts'));
