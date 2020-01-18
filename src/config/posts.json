@@ -1,5 +1,11 @@
 [
     {
+        "slug": "react-reducing-bundle-size-part-1",
+        "title": "React: Reducing Bundle Size Part 1",
+        "description": "Bundle size is important when deploying any client side javascript, especially if a large percentage of your users visit on a mobile device.",
+        "date": "01/18/20"
+    },
+    {
         "slug": "laravel-service-pattern",
         "title": "Laravel: Using the Service Pattern",
         "description": "Services can be used to abstract reusable logic away from controllers as your app scales",
@@ -7,7 +13,7 @@
     },
     {
         "slug": "dynamically-render-markdown-from-a-react-component",
-        "title": "Dynamically Render Markdown from a React Component",
+        "title": "React: Dynamically Render Markdown from a Component",
         "description": "I demonstrate how to render markdown files dynamically based on the url",
         "date": "01/01/20"
     },
